@@ -11,7 +11,7 @@ admin home
 var app = angular.module('admin-home', ["firebase"]);
 app.controller('controller', function($scope) 
 {
-    var ref = new Firebase("https://project-snowman.firebaseio.com/");
+    var ref = new Firebase("https://sweet-home.firebaseio.com/");
     var authData = ref.getAuth();
     if(authData)
     {
